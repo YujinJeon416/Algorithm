@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//평균점수
+
 public class num_10039 {
 
 	public static void main(String[] args) {

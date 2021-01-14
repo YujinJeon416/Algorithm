@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class num_1924 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt(); // 월
+		int d = sc.nextInt(); // 일
+
+		int[] mdays = new int[13]; // 각 월들
+		mdays[1] = mdays[3] = mdays[5] = mdays[7] = mdays[8] = mdays[10] = mdays[12] = 31;
+		mdays[4] = mdays[6] = mdays[9] = mdays[11] = 30;
+		mdays[2] = 28;
+
+		int sum = 0;
+
+		for (int i = 1; i <= 12; i++) {
+			if (i == m) {
+				break;
+			}
+			sum = sum + mdays[i];
+		}
+
+		sum = sum + d;
+
+		switch (sum % 7) {
+		case 0:
+			System.out.println(m+"월 " + d + "일은 "+ "일요일입니다.");
+			break;
+		case 1:
+			System.out.println(m+"월" + d+ "일은 "+ "월요일입니다.");
+			break;
+		case 2:
+			System.out.println(m+"월" + d+ "일은 "+ "화요일입니다.");
+			break;
+		case 3:
+			System.out.println(m+"월" + d+ "일은 "+ "수요일입니다.");
+			break;
+		case 4:
+			System.out.println(m+"월" + d+ "일은 "+ "목요일입니다.");
+			break;
+		case 5:
+			System.out.println(m+"월" + d+ "일은 "+ "금요일입니다.");
+			break;
+		case 6:
+			System.out.println(m+"월" + d+ "일은 "+ "토요일입니다.");
+			break;
+		}
+	}
+}

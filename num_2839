@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class num_2839 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int sugar = sc.nextInt(); // 설탕 N킬로그램
+		int a = 0; // 봉지 수
+		int f=0, t=0; // 5킬로, 3킬로 봉지 갯수
+		if (sugar >= 3 && sugar <= 5000)
+			while (true) {
+				if (sugar % 5 == 0) {
+					f = sugar/5;
+					System.out.println("총 봉지 수 : " + ((sugar / 5) + a));
+					System.out.println("5킬로 봉지 수 : " + f + "\n3킬로 봉지 수 : " + t);
+					break;
+				} else if (sugar >= 3) {
+					a++;
+					sugar -= 3;
+					t++;
+				} else {
+					System.out.println("-1");
+					break;
+				}
+			}
+	}
+}

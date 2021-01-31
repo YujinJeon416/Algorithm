@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class num_10817 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int nums[] = new int[3];
 		Scanner sc = new Scanner(System.in);
 

@@ -1,7 +1,7 @@
 public class num_10172 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		System.out.println("|\\_/|");
 		System.out.println("|q p|   /}");
 		System.out.println("( 0 )\"\"\"\\");
